@@ -204,7 +204,7 @@
     }
     .report-intro--stage h1 {
       font-family: var(--font-display);
-      font-size: clamp(3rem, 8.5vw, 6rem);
+      font-size: clamp(2.25rem, 5.5vw, 4.25rem);
       font-weight: 400;
       line-height: 1.02;
       letter-spacing: 0.01em;
@@ -267,7 +267,6 @@
       outline-offset: 3px;
     }
 
-    /* === Stats Strip === */
     .stats-strip {
       background: var(--page-brand-active);
       color: #fff;
@@ -314,7 +313,6 @@
       color: rgba(255,255,255,0.68);
     }
 
-    /* === Section structure === */
     .section { padding: var(--space-10) 0; }
     .section--muted { background: var(--page-surface); }
     .section--dark {
@@ -378,7 +376,6 @@
     }
     .section--dark .lead-text { color: rgba(255,255,255,0.8); }
 
-    /* === Pull quote === */
     .pull-quote {
       margin: var(--space-7) 0 0;
       padding: var(--space-6) var(--space-7);
@@ -410,7 +407,6 @@
       max-width: none;
     }
 
-    /* === Audience cards === */
     .audience-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -454,7 +450,6 @@
       margin: 0;
     }
 
-    /* === Cultural bridge === */
     .bridge-section {
       padding: var(--space-10) 0;
       background: var(--page-surface);
@@ -533,7 +528,6 @@
       background: linear-gradient(90deg, var(--accent-red), var(--accent));
     }
 
-    /* === Feature cards (numbered) === */
     .feature-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -595,7 +589,6 @@
       z-index: 1;
     }
 
-    /* === Timeline === */
     .timeline {
       margin-top: var(--space-7);
       position: relative;
@@ -649,7 +642,6 @@
       margin: 0;
     }
 
-    /* === Two-column section === */
     .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -660,7 +652,6 @@
     .two-col p { margin-top: var(--space-4); }
     .two-col p:first-child { margin-top: 0; }
 
-    /* === Registration === */
     .registration {
       background: linear-gradient(155deg, #061E36 0%, #0A2E54 50%, #0D4577 100%);
       color: #fff;
@@ -765,7 +756,6 @@
       outline-offset: 3px;
     }
 
-    /* === Footer === */
     .site-footer {
       background: var(--page-surface-muted);
       padding: var(--space-8) 0;
@@ -800,7 +790,6 @@
       line-height: 1.6;
     }
 
-    /* === Responsive === */
     @media (max-width: 768px) {
       .stats-strip__inner { grid-template-columns: repeat(2, 1fr); }
       .stat-item:nth-child(2) { border-right: none; }
@@ -844,8 +833,6 @@
 </head>
 <body>
   <article class="page">
-
-    <!-- ==================== HERO ==================== -->
     <header class="report-intro report-intro--stage">
       <div class="report-intro__surface">
         <div class="hero-bg-pattern"></div>
@@ -888,7 +875,6 @@
       </div>
     </header>
 
-    <!-- ==================== STATS STRIP ==================== -->
     <div class="stats-strip">
       <div class="stats-strip__pattern"></div>
       <div class="stats-strip__inner">
@@ -912,15 +898,13 @@
     </div>
 
     <div class="page__content">
-
-      <!-- ==================== ABOUT ==================== -->
       <main>
         <section class="section" id="about">
           <div class="section__inner">
             <span class="section-eyebrow">About the Session</span>
             <h2>An Afternoon of Open Exchange</h2>
             <p class="lead-text">
-              Following the closed-door institutional session in the morning, the Open Door Session in the afternoon welcomes a broader higher education community to meet Chinese university representatives, discover opportunities for academic and educational cooperation, and exchange ideas about the future of Sino-Hellenic higher education relations.
+              Following the closed-door institutional session in the morning, the Open Door Session in the afternoon welcomes a broader higher education community to meet Chinese university representatives, discover opportunities for academic and educational collaboration, and exchange ideas about the future of Sino-Hellenic higher education relations.
             </p>
             <div class="pull-quote">
               <p>Bringing together different perspectives, interests and opportunities under the wider framework of the Sino-Hellenic Higher Education Summit.</p>
@@ -928,7 +912,6 @@
           </div>
         </section>
 
-        <!-- ==================== AUDIENCE ==================== -->
         <section class="section section--muted" id="audience">
           <div class="section__inner section__inner--wide">
             <span class="section-eyebrow">Who It Is For</span>
@@ -984,7 +967,6 @@
           </div>
         </section>
 
-        <!-- ==================== CULTURAL BRIDGE ==================== -->
         <section class="bridge-section" id="bridge">
           <div class="bridge-section__pattern"></div>
           <div class="bridge-section__inner">
@@ -1001,189 +983,156 @@
                   </svg>
                 </div>
                 <h3>Greece</h3>
-                <p>Cradle of Western philosophy and learning, host of the Summit</p>
+                <p>Anchored in a strong tradition of scholarship, research and international engagement.</p>
               </div>
-              <div class="bridge-connector">
-                <div class="bridge-connector__line"></div>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/>
+              <div class="bridge-connector" aria-hidden="true">
+                <span class="bridge-connector__line"></span>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"/><path d="M13 5l7 7-7 7"/>
                 </svg>
-                <div class="bridge-connector__line"></div>
+                <span class="bridge-connector__line"></span>
               </div>
               <div class="bridge-side bridge-side--right">
                 <div class="bridge-side__icon" aria-hidden="true">
                   <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    <circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M3 12h18"/>
                   </svg>
                 </div>
                 <h3>China</h3>
-                <p>Home to participating universities, research strengths and study opportunities</p>
+                <p>Home to major research universities and a major global higher education ecosystem.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== MEET CHINESE UNIVERSITIES ==================== -->
-        <section class="section section--dark" id="meet-universities">
+        <section class="section" id="features">
           <div class="section__inner">
-            <span class="section-eyebrow">Direct Engagement</span>
-            <h2>Meet Chinese Universities</h2>
-            <div class="two-col">
-              <p>
-                The Open Door Session will provide an opportunity to engage directly with representatives of participating Chinese universities.
-              </p>
-              <p>
-                Discover their academic programmes, research strengths and international opportunities, and explore possibilities for future connection and cooperation.
-              </p>
-            </div>
-            <p>
-              Whether you are considering studying in China, looking for research or academic collaboration, or simply interested in learning more about Chinese higher education, the Open Door Session offers an opportunity to connect directly with institutions and their representatives.
-            </p>
-          </div>
-        </section>
-
-        <!-- ==================== WHAT TO EXPECT ==================== -->
-        <section class="section section--muted" id="what-to-expect">
-          <div class="section__inner section__inner--wide">
-            <span class="section-eyebrow">Programme Highlights</span>
-            <h2>What to expect</h2>
+            <span class="section-eyebrow">What to Expect</span>
+            <h2>Designed for discovery and partnership</h2>
             <div class="feature-grid">
-              <div class="feature-card">
+              <article class="feature-card">
                 <div class="feature-card__num">01</div>
                 <div class="feature-card__icon" aria-hidden="true">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 0 4 19.5v-12A2.5 2.5 0 0 1 6.5 5z"/>
                   </svg>
                 </div>
-                <h3>Chinese University Exhibition</h3>
-                <p>Meet participating Chinese universities and learn more about their programmes, academic fields and international engagement.</p>
-              </div>
-              <div class="feature-card">
+                <h3>University Showcase</h3>
+                <p>Explore a curated display of Chinese universities and programmes in a welcoming, open-door format.</p>
+              </article>
+              <article class="feature-card">
                 <div class="feature-card__num">02</div>
                 <div class="feature-card__icon" aria-hidden="true">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-8"/>
                   </svg>
                 </div>
-                <h3>Academic &amp; Research Exchange</h3>
-                <p>Explore opportunities for research collaboration, joint projects, academic exchange and other forms of institutional cooperation.</p>
-              </div>
-              <div class="feature-card">
+                <h3>Academic Matchmaking</h3>
+                <p>Meet institutions, departments and representatives focused on collaboration, mobility and exchange.</p>
+              </article>
+              <article class="feature-card">
                 <div class="feature-card__num">03</div>
                 <div class="feature-card__icon" aria-hidden="true">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 2 3 6 3s6-2 6-3v-5"/>
-                  </svg>
-                </div>
-                <h3>Student Opportunities</h3>
-                <p>Discover opportunities for international study, mobility and academic experiences in China.</p>
-              </div>
-              <div class="feature-card">
-                <div class="feature-card__num">04</div>
-                <div class="feature-card__icon" aria-hidden="true">
-                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                   </svg>
                 </div>
-                <h3>Networking &amp; Connections</h3>
-                <p>Meet representatives of Chinese universities and members of the Greek higher education community in an informal and open setting.</p>
-              </div>
+                <h3>Networking &amp; Conversation</h3>
+                <p>Connect with students, academics and professionals looking to build meaningful partnerships.</p>
+              </article>
+              <article class="feature-card">
+                <div class="feature-card__num">04</div>
+                <div class="feature-card__icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                  </svg>
+                </div>
+                <h3>Open Doors for All</h3>
+                <p>A welcoming public forum bridging academic communities across disciplines, regions and institutions.</p>
+              </article>
             </div>
           </div>
         </section>
 
-        <!-- ==================== TIMELINE ==================== -->
-        <section class="section" id="timeline">
+        <section class="section section--muted" id="program">
           <div class="section__inner">
-            <span class="section-eyebrow">Afternoon Programme</span>
-            <h2>Open Door Session Schedule</h2>
+            <span class="section-eyebrow">Session Flow</span>
+            <h2>How the day unfolds</h2>
             <div class="timeline">
               <div class="timeline-item">
-                <div class="timeline-item__time">14:30</div>
-                <h3>Doors Open &amp; Welcome</h3>
-                <p>Arrival, registration and opening remarks at Harokopio University of Athens.</p>
+                <div class="timeline-item__time">09:30</div>
+                <h3>Institutional Session</h3>
+                <p>Closed-door discussion and strategic exchange focused on bilateral higher education cooperation.</p>
               </div>
               <div class="timeline-item">
-                <div class="timeline-item__time">14:45</div>
-                <h3>Chinese University Exhibition</h3>
-                <p>Engage directly with representatives of participating Chinese universities at their exhibition stands.</p>
+                <div class="timeline-item__time">14:00</div>
+                <h3>Open Door Session Begins</h3>
+                <p>Public engagement opens to students, staff, researchers and interested members of the wider community.</p>
               </div>
               <div class="timeline-item">
-                <div class="timeline-item__time">17:30</div>
-                <h3>Networking &amp; Close</h3>
-                <p>Informal networking with representatives and the Greek higher education community.</p>
+                <div class="timeline-item__time">15:30</div>
+                <h3>Networking &amp; Follow-up</h3>
+                <p>Informal discussions and connection-building opportunities among attendees and university representatives.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== BE PART OF THE CONVERSATION ==================== -->
-        <section class="section section--muted" id="join">
+        <section class="section" id="context">
           <div class="section__inner">
-            <span class="section-eyebrow">Join the Conversation</span>
-            <h2>Be part of the conversation</h2>
-            <p class="lead-text">
-              The Open Door Session is designed as a meeting point between the Greek and Chinese higher education communities &mdash; bringing together different perspectives, interests and opportunities under the wider framework of the Sino-Hellenic Higher Education Summit.
-            </p>
-            <p>
-              Whether you are a student looking for your next international opportunity, an academic exploring new research connections, or a higher education professional interested in developing institutional cooperation, you are welcome to join us.
-            </p>
+            <div class="two-col">
+              <div>
+                <span class="section-eyebrow">Why It Matters</span>
+                <h2>Building bridges across borders</h2>
+                <p>Higher education cooperation is a powerful driver of research, talent mobility and cultural understanding. This event creates a practical platform for connecting institutions and people with shared ambitions.</p>
+                <p>By inviting a wider public audience into the conversation, the event extends the value of the summit beyond formal meetings into everyday learning, partnership and innovation.</p>
+              </div>
+              <div>
+                <span class="section-eyebrow">At a Glance</span>
+                <h2>What participants can expect</h2>
+                <p>Exposure to Chinese universities, regional education priorities and pathways for study, research and collaboration.</p>
+                <p>High-value opportunities to meet representatives, ask questions and explore future directions for academic engagement between Greece and China.</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
-    </div><!-- /.page__content -->
-
-    <!-- ==================== REGISTRATION ==================== -->
-    <section class="registration" id="registration">
-      <div class="registration__pattern"></div>
-      <div class="registration__glow"></div>
-      <div class="registration__inner">
-        <span class="section-eyebrow">Open Door Session</span>
-        <h2>Join Us on 20 October 2026</h2>
-        <div class="registration__meta">
-          <span class="registration__meta-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-            20 October 2026
-          </span>
-          <span class="registration__meta-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-            </svg>
-            14:30 &ndash; 17:30
-          </span>
-          <span class="registration__meta-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-            </svg>
-            Harokopio University of Athens
-          </span>
+      <section class="registration" id="registration">
+        <div class="registration__pattern"></div>
+        <div class="registration__glow"></div>
+        <div class="registration__inner">
+          <span class="section-eyebrow">Register Your Interest</span>
+          <h2>Join the Chinese Universities Exhibition</h2>
+          <div class="registration__meta">
+            <span class="registration__meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              20 October 2026
+            </span>
+            <span class="registration__meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              Harokopio University of Athens
+            </span>
+          </div>
+          <div class="registration__divider"></div>
+          <p class="registration__desc">
+            Registration is open to students, academics, researchers, higher education professionals and other interested participants.
+          </p>
+          <a class="registration__cta" href="#">Register Now</a>
         </div>
-        <div class="registration__divider"></div>
-        <p class="registration__desc">
-          Registration is open to students, academics, researchers, higher education professionals and other interested participants.
-        </p>
-        <a href="#" class="registration__cta" onclick="return false;">
-          Register for the Open Door Session
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-          </svg>
-        </a>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="site-footer__brand">Sino-Hellenic Higher Education Summit 2026</div>
-        <div class="site-footer__meta">
-          Open Door Session &middot; 20 October 2026 &middot; Harokopio University of Athens
-        </div>
+        <div class="site-footer__meta">Open Door Session • 20 October 2026 • Harokopio University of Athens</div>
       </div>
     </footer>
-
   </article>
 </body>
 </html>
